@@ -2,9 +2,11 @@
   "name": "Test-Driven-Katas",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "twoSum.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-wrap": "mocha wrap.spec.js --watch --recursive",
+    "test-twosum": "mocha twoSum.spec.js --watch --recursive",
+    "test-lcp": "mocha longestCommonPrefix.spec.js --watch --recursive"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
     "url": "https://github.com/JoshuaHoeflich/Test-Driven-Katas/issues"
   },
   "homepage": "https://github.com/JoshuaHoeflich/Test-Driven-Katas#readme",
-  "dependencies": {
+  "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.2.0"
   }
